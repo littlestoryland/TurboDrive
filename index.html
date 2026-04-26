@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TurboDrive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="toast"></div>
+
+    <div class="login-container">
+        <h2 id="formTitle" style="margin-bottom: 20px;">Login</h2>
+        
+        <div style="text-align: left; margin-bottom: 15px;">
+            <label style="font-size: 0.8rem; font-weight: bold; color: #666;">Username</label>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+
+        <div id="signup-extra" style="display:none; text-align: left; margin-bottom: 15px;">
+            <label id="extraLabel" style="font-size: 0.8rem; font-weight: bold; color: #666;">Recovery Key</label>
+            <input type="text" id="securityAnswer" placeholder="Answer here...">
+        </div>
+
+        <div style="text-align: left; margin-bottom: 20px;">
+            <label style="font-size: 0.8rem; font-weight: bold; color: #666;">Password</label>
+            <input type="password" id="password" placeholder="••••••••">
+        </div>
+
+        <button class="login-btn" onclick="handleAuth()" id="mainBtn">LOGIN</button>
+        
+        <p class="forgot-link" id="forgotBtn" onclick="toggleForgot()">Forgot Password?</p>
+        <p class="forgot-link" id="toggleLink" onclick="toggleAuth()" style="margin-top: 20px;">New here? Sign Up</p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

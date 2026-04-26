@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Profile | TurboDrive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="toast"></div>
+
+    <header class="header">
+        <h2 style="margin:0; font-style: italic; color: #333; letter-spacing: 1px; cursor: pointer;" onclick="window.location.href='home.html'">TurboDrive</h2>
+        <div class="profile-btn" onclick="window.location.href='home.html'" style="background: #333;">
+            <div style="color: white; font-weight: bold; font-size: 1.2rem;">⌂</div>
+        </div>
+    </header>
+
+    <div class="profile-header">
+        <div class="profile-avatar"></div>
+        <h1 id="profileName">VIP Member</h1>
+        <p class="vip-badge">STATUS: ELITE COLLECTOR</p>
+    </div>
+
+    <div class="section-divider" style="padding-top: 40px;">
+        <h2 class="collection-title">MY GARAGE</h2>
+    </div>
+
+    <div class="car-grid" id="garageGrid">
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400" alt="Bugatti">
+            <h3>Bugatti Chiron</h3>
+            <p style="color:#fc00ff; font-weight:bold; font-size: 1.1rem;">RESERVED</p>
+            <button class="inquire-btn" style="background: #333; box-shadow: none;" onclick="showToast('Tracking details sent to email.')">TRACK DELIVERY</button>
+        </div>
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=400" alt="Tesla">
+            <h3>Tesla Model S Plaid</h3>
+            <p style="color:#fc00ff; font-weight:bold; font-size: 1.1rem;">DELIVERED</p>
+            <button class="inquire-btn" style="background: transparent; border: 2px solid #333; color: #333; box-shadow: none;" onclick="window.location.href='home.html'">BROWSE MORE</button>
+        </div>
+    </div>
+
+    <div class="account-actions">
+        <button class="login-btn" onclick="logout()" style="max-width: 300px; margin: 0 auto; display: block; background: #222; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            SECURE LOGOUT
+        </button>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

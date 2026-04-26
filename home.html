@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboDrive | Luxury Showroom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="toast"></div>
+
+    <header class="header">
+        <h2 style="margin:0; font-style: italic; color: #333; letter-spacing: 1px; cursor: pointer;">TurboDrive</h2>
+        
+        <div class="profile-btn" onclick="window.location.href='profile.html'">
+            <img src="1000314000.jpg" alt="Profile" class="header-profile-img">
+        </div>
+    </header>
+
+    <section class="hero-image-large"></section>
+
+    <section class="hero-description">
+        <h1>Get Your Dream Car</h1>
+        <p>TurboDrive is your exclusive gateway to the world's most powerful vehicles. We specialize in sourcing limited-edition hypercars and premium SUVs for those who refuse to settle for ordinary.</p>
+    </section>
+
+    <div class="section-divider">
+        <h2 class="collection-title">OUR COLLECTIONS</h2>
+    </div>
+
+    <div class="cat-bar">
+        <button class="cat-btn active" onclick="filterCars('ALL', this)">ALL</button>
+        <button class="cat-btn" onclick="filterCars('SPORT', this)">SPORT</button>
+        <button class="cat-btn" onclick="filterCars('SUV', this)">SUV</button>
+        <button class="cat-btn" onclick="filterCars('ELECTRIC', this)">ELECTRIC</button>
+    </div>
+
+    <div class="car-grid" id="carGrid"></div>
+
+    <section class="ratings-section">
+        <div class="section-divider">
+            <h2 class="collection-title">CLIENT REVIEWS</h2>
+        </div>
+        <div class="ratings-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The acquisition process for my Chiron was seamless. TurboDrive handles every detail with perfection."</p>
+                <span class="client-name">— James W., Dubai</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Finally, a showroom that understands the needs of serious collectors. VIP service throughout."</p>
+                <span class="client-name">— Sarah L., London</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The best selection of performance SUVs I've seen. My G-Wagon arrived exactly as promised."</p>
+                <span class="client-name">— Marcus T., New York</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Incredible attention to detail. The shipping and logistics were handled with extreme care."</p>
+                <span class="client-name">— Elena R., Milan</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <h3 style="font-size: 2.5rem; margin-bottom: 10px;">Ready to Drive?</h3>
+        <p style="margin-bottom: 40px; color: #666;">Our consultants are available 24/7 to assist with your next automotive acquisition.</p>
+        <button class="premium-contact-btn" onclick="showToast('Connecting to Concierge...')">
+            CONTACT US NOW
+        </button>
+        <div style="margin-top: 60px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px;">
+            © 2026 TURBODRIVE EXOTICS. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script src="js/inventory.js"></script>
+</body>
+</html>
